@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        ul
+        {
+            list-style-type: none;
+        }
+        
+        li:nth-child(odd)
+        {
+            background-color: aqua;
+        }
+        
+        li:nth-child(even)
+        {
+            background-color: aquamarine;
+        }
+        
+        .n1::before
+        {
+            
+            content: url(icons/autumn_16.png);
+        }
+        
+        span
+        {
+            color: red;
+        }
+    
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="n1">Item 1 <span>&times;</span></li>
+        <li>Item 2</li>
+        <li class="g">Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+        <li>Item 6</li>
+        <li>Item 7</li>
+        <li>Item 8</li>
+        <li>Item 9</li>
+        <li>Item 10</li>
+    </ul>
+</body>
+</html>
