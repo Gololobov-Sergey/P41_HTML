@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        ul
+        {
+            list-style-type: none;
+        }
+        
+        li:nth-child(odd)
+        {
+            background-color: cornflowerblue;
+        }
+        
+        li:nth-child(even)
+        {
+            background-color: lightblue;
+        }
+        
+        .n1::before
+        {
+            
+            content: url(hta/unchecked_16.png);
+            padding: 20px;
+        }
+        
+        span
+        {
+            color: red;
+        }
+        li{
+            padding: 15px;
+        }
+        .n3{
+            padding: 10px;
+        }
+        .n2::before{
+            content: url(hta/checked_16.png);
+            padding: 20px;
+            
+        }
+       
+       
+    
+           
+        
+        .zacerk{
+            text-decoration-line: line-through;
+            color:black;
+        }
+        h3{
+            margin:40px;
+           font-size: 26px;
+        }
+       
+        li:nth-child(5)
+        {
+            background-color: gray;
+        }
+    
+    </style>
+</head>
+<body>
+   <h3>My To Do List</h3>
+    <ul>
+        <li class="n1">Hit the gym <span class="n3">&times;</span></li>
+        <li class="n2"><span class="zacerk">Pay bills</span> <span class="n3">&times;</span></li>
+        <li class="n1">Meet John <span class="n3">&times;</span></li>
+        <li  class="n1">Buy eggs <span class="n3">&times;</span></li>
+        <li class="n2"><span class="zacerk">Read a book</span> <span class="n3">&times;</span></li>
+        <li  class="n1">Organize office <span class="n3">&times;</span></li>
+        <li class="n1">Eat dinner <span class="n3">&times;</span></li>
+        <li  class="n1 gray">Buy apples <span class="n3">&times;</span></li>
+        <li  class="n1">Meet George <span class="n3">&times;</span></li>
+        <li  class="n1">Feed thee cat <span class="n3">&times;</span> </li>
+        <li class="n2"><span class="zacerk">Write a letter</span> <span class="n3">&times;</span></li>
+        <li  class="n1">Run 1 km <span class="n3">&times;</span></li>
+    </ul>
+</body>
+</html>
