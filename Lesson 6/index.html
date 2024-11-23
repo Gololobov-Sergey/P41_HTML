@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        a
+        {
+            text-decoration: none;
+            display: inline-block;
+            padding: 15px;
+            background-color: yellow;
+            color: blue;
+            border: 2px solid blue;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 50px;
+            text-align: center;
+            margin: 20px;
+            
+        }
+        
+        .b1
+        {
+            transition: all 1s ease 0s;
+        }
+        
+        .b1:hover
+        {
+            background-color: blue;
+            color: yellow;
+            border: 2px solid yellow;
+        }
+        
+        .b2
+        {
+            transform-origin: left top;
+/*            transform: rotate(-30deg);*/
+/*            transform: rotate(-30deg);*/
+/*            transform: translateY(100px);*/
+/*            transform: skewX(-20deg);*/
+/*            perspective: 500px;*/
+            transform: rotateY(45deg);
+            transition: all 1s ease 0s;
+        }
+        
+        .b2:hover
+        {
+            transform: scale(1.2);
+/*            transform: rotate(-30deg)*/
+        }
+        
+        h1
+        {
+            background-color: aqua;
+            padding: 20px;
+            
+            animation: anime 4s ease-in-out infinite;
+            
+        }
+        
+        @keyframes anime
+        {
+            from
+            {
+                padding-left: 20px;
+            }
+            
+            to
+            {
+                padding-left: 1200px;
+/*                font-size: 80px;*/
+/*                color: white;*/
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <a class="b1" href="">Click</a>
+    <a class="b2" href="">Click 2</a>
+    <h1>Text</h1>
+</body>
+</html>
