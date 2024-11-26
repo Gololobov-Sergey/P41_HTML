@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    
+        .clock
+        {
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            border-radius: 50%;
+            margin: auto;   
+        }
+        
+        .hour
+        {
+            background-color: black;
+            width: 6px;
+            height: 150px;
+            border-radius: 3px;
+/*            transform: rotate(30deg);*/
+            transform-origin: bottom;
+            margin-left: 198px;
+            margin-top: 48px;
+            animation: an 60s linear infinite;
+        }
+        
+        .minutes
+        {
+            background-color: black;
+            width: 6px;
+            height: 180px;
+            border-radius: 3px;
+            transform: rotate(180deg);
+            transform-origin: top;
+            margin-left: 198px;
+            margin-top: 0px;
+            animation: an_h 5s linear infinite;
+        }
+        
+        
+        .dot
+        {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: black;
+            margin-left: 192px;
+            transform: translateY(-194px);
+        }
+        @keyframes an
+        {
+            from{ transform: rotate(0deg);}
+            to { transform: rotate(360deg);}
+        }
+        
+        @keyframes an_h
+        {
+            from{ transform: rotate(180deg);}
+            to { transform: rotate(540deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="clock">
+        <div class="hour"></div>
+        <div class="minutes"></div>
+        <div class="dot"></div>
+        
+    </div>
+</body>
+</html>

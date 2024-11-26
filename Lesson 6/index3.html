@@ -7,30 +7,94 @@
         .container
         {
             background-color: bisque;
-            height: 400px;
+            height: 500px;
+            width: 1100px;
+            margin: auto;
             overflow: hidden;
         }
         
         .el1
         {
-            transform: rotate(-30deg) scale(0.5);
-            margin-top: 300px;
+            transform: rotate(-30deg) scale(0.3);
+/*            width: 100px;*/
+            margin-top: 500px;
             
             animation: an1 2s linear;
             animation-fill-mode: forwards;
         }
         
+        .el2
+        {
+            transform: rotate(-15deg) scale(0.8);
+            margin-top: 500px;
+            animation: an2 2s linear 0.5s;
+            animation-fill-mode: forwards;
+        }
+        
+        .el3
+        {
+            transform: rotate(15deg)scale(0.8) ;
+            margin-top: 500px;
+            animation: an2 2s linear 1s;
+            animation-fill-mode: forwards;
+        }
+        
+        .el4
+        {
+            transform: rotate(30deg) scale(0.3);
+            margin-top: 500px;
+            animation: an1 2s linear 1.5s;
+            animation-fill-mode: forwards;
+        }
+        
+        .el5
+        {
+            margin-left: 480px;
+            transform: rotate(90deg);
+            margin-top: 0;
+        }
+        .el
+        {
+            float: left;
+        }
+        
+        .clear
+        {
+            clear: both;
+        }
+        
+        h1
+        {
+            text-align: center;
+            margin: 3px 0 0 0;
+        }
         @keyframes an1
         {
-            from{margin-top: 300px;}
-            to{margin-top: 0px;}
+            from{margin-top: 500px;}
+            to{margin-top: 100px;}
         }
-    
+        
+        @keyframes an2
+        {
+            from{margin-top: 500px;}
+            to{margin-top: 50px;}
+        }
+        @keyframes an2
+        {
+            from{margin-top: 500px;}
+            to{margin-top: 50px;}
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="el1"><img src="pics/calc.png" alt=""></div>
+       <h1>Hello Me site!</h1>
+        <div class="el el1"><img src="pics/calc.png" alt=""></div>
+        <div class="el el2"><img src="pics/pallete.png" alt=""></div>
+        <div class="el el3"><img src="pics/paper.png" alt=""></div>
+        <div class="el el4"><img src="pics/book.png" alt=""></div>
+        <div class="clear"></div>
+        <div class="el el5"><img src="pics/pencil.png" alt=""></div>
     </div>
 </body>
 </html>
