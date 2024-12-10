@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container
+        {
+            width: 100vw;
+            min-width: 320px;
+            margin: auto;
+            min-height: 100vh;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        header
+        {
+            background-color: aqua;
+            flex-basis: 10vh;
+        }
+        
+        main
+        {
+            display: flex;
+            flex: 1 1 auto;
+        }
+        
+        main>aside
+        {
+            background-color: cadetblue;
+            flex-basis: 20%;
+        }
+        
+        main>section
+        {
+            background-color: chocolate;
+            flex: 1 1 auto;
+        }
+        
+        main>section+aside
+        {
+            background-color: chartreuse;
+            flex-basis: 20%;
+        }
+        
+        footer
+        {
+            background-color: crimson;
+            flex-basis: 10vh;
+        }
+        
+        
+        @media screen and (max-width:900px)
+        {
+            main>section+aside
+            {
+                display: none;
+            }
+            
+            main>aside
+            {
+                flex-basis: 30%;
+            }
+        }
+        
+        @media screen and (max-width:500px)
+        {
+            main
+            {
+                flex-direction: column;
+            }
+            
+            main>aside
+            {
+                flex-basis: 20vh;
+            }
+            
+            section
+            {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>Header</header>
+        <main>
+            <aside>Left</aside>
+            <section>Section</section>
+            <aside>Right</aside>
+        </main>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>
