@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>    
+        body
+        {
+            font-family: sans-serif;
+            
+        }
+        .container
+        {
+            width: 900px;
+            margin: auto;
+            background-color: #fff7eb;
+            display: flex;
+            padding: 20px;
+        }
+        
+        .cont-1
+        {
+            width: 65%;
+            
+        }
+        
+        .cont-2
+        {
+            display: flex;
+            flex-direction: column;
+            width: 35%;
+            padding: 0 20px 0 0;
+            margin-left: 20px;
+        }
+        
+        ul
+        {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .list
+        {
+            padding: 10px 10px 0 10px;
+        }
+        
+        li
+        {
+            background-color: #b0c4df;
+            color: #37516c;
+            padding: 10px;
+            border-top: 1px solid #65819d;
+        }
+        
+        li:first-child
+        {
+            background-color: #37516c;
+            color: white;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        li:last-child
+        {
+            border-radius: 0 0 10px 10px;
+        }
+        
+        p
+        {
+            text-align: justify;
+        }
+        
+        @media screen and (max-width:800px)
+        {
+            .container
+            {
+                width: 600px;
+                flex-direction: column;
+            }
+            .cont-1
+            {
+                width: 100%;
+            }
+            .cont-2
+            {
+                flex-direction: row;
+                width: 100%;
+                margin-left: 0;
+            }
+            .list
+            {
+                width: 50%;
+            }
+        }
+        
+        @media screen and (max-width:600px)
+        {
+             .container
+            {
+                width: 400px;
+            }
+
+            .cont-2
+            {
+                flex-direction: column;
+                width: 100%;
+            }
+            .list
+            {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cont-1">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium debitis alias soluta minima in similique nostrum quo ipsam voluptatibus magni, tempora dolore cupiditate quam iure nihil cumque aperiam, magnam, iusto hic. Porro fuga aut deserunt sed ratione aliquam in mollitia ullam saepe quo illo soluta perferendis, corporis dolorem recusandae perspiciatis beatae maiores minima, aspernatur possimus nostrum quibusdam, numquam. Soluta a nemo dicta itaque. Itaque consectetur qui facere hic voluptatibus quidem a repellendus cum saepe natus dicta blanditiis corporis, accusantium corrupti vitae! Facilis amet, ratione nemo sit aliquam iste recusandae dicta voluptatibus beatae, sint odit omnis veritatis adipisci dolores consequatur asperiores.</p>
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam non molestiae consectetur est perspiciatis iure nemo eum quam magni facere soluta, unde laboriosam? Dolorem soluta, animi ullam, obcaecati ea delectus consequatur earum expedita, qui magnam quidem iste velit error ad unde a! Nesciunt dolores similique voluptatem a tenetur eos aliquam reprehenderit, architecto hic enim maiores qui ducimus porro praesentium deserunt atque, vero labore non laboriosam dicta ipsam! Repudiandae expedita, sapiente.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum veniam ex eveniet nostrum ad aut mollitia quaerat, ut a? Recusandae qui, veniam eum harum quidem incidunt est deleniti amet sunt!</p>
+        </div>
+        <div class="cont-2">
+            <div class="list">
+                <ul>
+                    <li>Action</li>
+                    <li>Lorem ipsum dolor sit.</li>
+                    <li>Voluptatum veniam ex.</li>
+                    <li>Nesciunt dolores sim.</li>
+                </ul>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>Plans</li>
+                    <li>Nesciunt dolores sim</li>
+                    <li>Voluptatum veniam ex</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
